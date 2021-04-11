@@ -25,7 +25,7 @@ public enum TemperatureBase
 public struct TeaData
 {
     public string m_name;
-    public string m_marque;
+    public string m_brand;
 
     public TeaType m_teaType;
 
