@@ -272,8 +272,9 @@ GameObject:
   - component: {fileID: 2840538606789643329}
   - component: {fileID: 2840538606789643328}
   - component: {fileID: 2840538606789643331}
+  - component: {fileID: 2129681620}
   m_Layer: 5
-  m_Name: Button (1)
+  m_Name: RandomTeaButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -378,7 +379,35 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2840538606789643328}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2129681620}
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2129681620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2840538606789643333}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31bbd86ff5967a142bd672f5ff87bec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_panelToOpen: {fileID: 0}
+  m_panelsToClose:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &2840538606861567165
 GameObject:
   m_ObjectHideFlags: 0
@@ -391,8 +420,9 @@ GameObject:
   - component: {fileID: 2840538606861567161}
   - component: {fileID: 2840538606861567160}
   - component: {fileID: 2840538606861567163}
+  - component: {fileID: 1917768748}
   m_Layer: 5
-  m_Name: Button (2)
+  m_Name: SearchButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -441,7 +471,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -497,7 +527,35 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2840538606861567160}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1917768748}
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1917768748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2840538606861567165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31bbd86ff5967a142bd672f5ff87bec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_panelToOpen: {fileID: 0}
+  m_panelsToClose:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &2840538607255912132
 GameObject:
   m_ObjectHideFlags: 0
@@ -510,8 +568,9 @@ GameObject:
   - component: {fileID: 2840538607255912128}
   - component: {fileID: 2840538607255912131}
   - component: {fileID: 2840538607255912130}
+  - component: {fileID: 449834579}
   m_Layer: 5
-  m_Name: Button
+  m_Name: MainPanelButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -616,7 +675,35 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2840538607255912131}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 449834579}
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &449834579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2840538607255912132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31bbd86ff5967a142bd672f5ff87bec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_panelToOpen: {fileID: 0}
+  m_panelsToClose:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &2840538607299366781
 GameObject:
   m_ObjectHideFlags: 0
@@ -707,8 +794,9 @@ GameObject:
   - component: {fileID: 2840538607453728994}
   - component: {fileID: 2840538607453728997}
   - component: {fileID: 2840538607453728996}
+  - component: {fileID: 377839729}
   m_Layer: 5
-  m_Name: Button (3)
+  m_Name: AddTeaButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -813,7 +901,35 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2840538607453728997}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 377839729}
+        m_MethodName: OnClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &377839729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2840538607453728998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31bbd86ff5967a142bd672f5ff87bec5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_panelToOpen: {fileID: 0}
+  m_panelsToClose:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &2840538607468688655
 GameObject:
   m_ObjectHideFlags: 0
