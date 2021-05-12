@@ -17,6 +17,13 @@ public class AddTeaForm : MonoBehaviour
     public InputField m_ingredientInputField;
     public Button m_addTeaButton;
 
+    private TeaManager m_teaManager;
+
+    private void Awake()
+    {
+        m_teaManager = FindObjectOfType<TeaManager>();
+    }
+
     public void OnAddTeaClicked()
     {
         TeaData teaData = new TeaData();
@@ -98,7 +105,7 @@ public class AddTeaForm : MonoBehaviour
         Debug.Log(teaData.m_brand);
         Debug.Log(teaData.m_temperatureBase);
         Debug.Log(teaData.m_temperature);
-
+        m_teaManager.AddTea(teaData);
 
     }
 }
