@@ -106,4 +106,10 @@ public class TeaManager : MonoBehaviour
     {
         return m_teasList;
     }
+
+    public TeaData GetRandomTea()
+    {
+        int randomIndex = (int) Random.Range(0f, m_teasList.Count);
+        return m_teasList[randomIndex];
+    }
 }

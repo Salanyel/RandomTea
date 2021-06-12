@@ -272,7 +272,7 @@ GameObject:
   - component: {fileID: 2840538606789643329}
   - component: {fileID: 2840538606789643328}
   - component: {fileID: 2840538606789643331}
-  - component: {fileID: 2129681620}
+  - component: {fileID: 797050810}
   m_Layer: 5
   m_Name: RandomTeaButton
   m_TagString: Untagged
@@ -380,7 +380,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2129681620}
+      - m_Target: {fileID: 797050810}
         m_MethodName: OnClick
         m_Mode: 1
         m_Arguments:
@@ -391,7 +391,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &2129681620
+--- !u!114 &797050810
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -400,7 +400,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2840538606789643333}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31bbd86ff5967a142bd672f5ff87bec5, type: 3}
+  m_Script: {fileID: 11500000, guid: e96acf845358d7843b0322e1871748d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_panelToOpen: {fileID: 0}
