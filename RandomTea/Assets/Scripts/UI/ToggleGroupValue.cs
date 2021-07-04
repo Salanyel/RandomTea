@@ -27,4 +27,14 @@ public class ToggleGroupValue : MonoBehaviour
         }
         return null;
     }
+
+    public void UncheckAll()
+    {
+        m_toggleList[0].isOn = true;
+
+        for(int i = 1; i < m_toggleList.Count; ++i)
+        {
+            m_toggleList[i].isOn = false;
+        }
+    }
 }

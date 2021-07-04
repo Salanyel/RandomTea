@@ -6,6 +6,8 @@ using System;
 
 public class AddTeaForm : MonoBehaviour
 {
+    public float m_teaAddFeedbackDuration = 2.0f;
+
     public InputField m_nameInputField;
     public InputField m_brandInputField;
     public ToggleGroupValue m_teaTypeToggleGroup;
@@ -16,12 +18,21 @@ public class AddTeaForm : MonoBehaviour
     public Slider m_caffeineSlider;
     public InputField m_ingredientInputField;
     public Button m_addTeaButton;
+    public GameObject m_teaAddedFeedbackPanel;
 
     private TeaManager m_teaManager;
+    private ScrollRect m_scrollRect;
 
     private void Awake()
     {
         m_teaManager = FindObjectOfType<TeaManager>();
+        m_scrollRect = GetComponentInChildren<ScrollRect>();
+        m_teaAddedFeedbackPanel.SetActive(false);
+    }
+
+    private void OnEnable()
+    {
+        ResetForm();
     }
 
     public void OnAddTeaClicked()
@@ -106,6 +117,38 @@ public class AddTeaForm : MonoBehaviour
         Debug.Log(teaData.m_temperatureBase);
         Debug.Log(teaData.m_temperature);
         m_teaManager.AddTea(teaData);
+
+        ResetForm();
+        DisplayFormFeedback();
+    }
+
+    private void ResetForm()
+    {
+        m_nameInputField.text = String.Empty;
+        m_brandInputField.text = String.Empty;
+        m_temperatureInputField.text = String.Empty;
+        m_ingredientInputField.text = String.Empty;
+
+        m_teaTypeToggleGroup.UncheckAll();
+        m_temperatureToggleGroup.UncheckAll();
+        m_timeMinSlider.value = 0f;
+        m_timeMaxSlider.value = 0f;
+        m_caffeineSlider.value = 0f;
+
+        m_scrollRect.verticalNormalizedPosition = 1f;
+    }
+
+    private void DisplayFormFeedback()
+    {
+        m_teaAddedFeedbackPanel.SetActive(true);
+        StartCoroutine(HideFormFeedback());
+    }
+
+    private IEnumerator HideFormFeedback()
+    {
+        yield return new WaitForSeconds(m_teaAddFeedbackDuration);
+
+        m_teaAddedFeedbackPanel.SetActive(false);
 
     }
 }

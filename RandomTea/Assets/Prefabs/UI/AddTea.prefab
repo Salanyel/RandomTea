@@ -86,7 +86,7 @@ GameObject:
   - component: {fileID: 42526442}
   - component: {fileID: 42526443}
   m_Layer: 5
-  m_Name: WhiteTeaToggle
+  m_Name: White
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -279,12 +279,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
+      - m_Target: {fileID: 1180605638}
+        m_MethodName: OnAddTeaClicked
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -609,6 +609,7 @@ GameObject:
   m_Component:
   - component: {fileID: 164175270}
   - component: {fileID: 164175271}
+  - component: {fileID: 591332010}
   m_Layer: 5
   m_Name: TypeToggles
   m_TagString: Untagged
@@ -654,6 +655,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AllowSwitchOff: 0
+--- !u!114 &591332010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 164175269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b2e77887a37f814d9f8cb204ea01681, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_toggleList:
+  - {fileID: 626946844}
+  - {fileID: 1059200947}
+  - {fileID: 995875121}
+  - {fileID: 42526443}
+  - {fileID: 470323492}
+  - {fileID: 312371094}
 --- !u!1 &212841238
 GameObject:
   m_ObjectHideFlags: 0
@@ -817,7 +837,7 @@ GameObject:
   - component: {fileID: 312371093}
   - component: {fileID: 312371094}
   m_Layer: 5
-  m_Name: OolongToggle
+  m_Name: Oolong
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1167,7 +1187,7 @@ GameObject:
   - component: {fileID: 470323491}
   - component: {fileID: 470323492}
   m_Layer: 5
-  m_Name: RooibosToggle
+  m_Name: Rooibos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1591,7 +1611,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 0
+  m_Text: No Caffeine
 --- !u!1 &616212523
 GameObject:
   m_ObjectHideFlags: 0
@@ -1639,7 +1659,7 @@ GameObject:
   - component: {fileID: 626946843}
   - component: {fileID: 626946844}
   m_Layer: 5
-  m_Name: InfusionToggle
+  m_Name: Infusion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2454,7 +2474,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 4
     m_MaxSize: 45
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 0
     m_HorizontalOverflow: 1
@@ -2550,7 +2570,7 @@ GameObject:
   - component: {fileID: 995875120}
   - component: {fileID: 995875121}
   m_Layer: 5
-  m_Name: BlackTeaToggle
+  m_Name: Black
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2787,7 +2807,7 @@ GameObject:
   - component: {fileID: 1059200946}
   - component: {fileID: 1059200947}
   m_Layer: 5
-  m_Name: GreenTeaToggle
+  m_Name: Green
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3934,7 +3954,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 4
     m_MaxSize: 45
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 0
     m_HorizontalOverflow: 1
@@ -4030,7 +4050,7 @@ GameObject:
   - component: {fileID: 1412806389}
   - component: {fileID: 1412806390}
   m_Layer: 5
-  m_Name: FahrenheitToggle
+  m_Name: Fahrenheit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4175,7 +4195,7 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 4
     m_MaxSize: 45
-    m_Alignment: 0
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 0
     m_HorizontalOverflow: 1
@@ -5123,6 +5143,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1905337828}
   - component: {fileID: 1905337829}
+  - component: {fileID: 773272924}
   m_Layer: 5
   m_Name: TemperatureToggles
   m_TagString: Untagged
@@ -5164,6 +5185,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AllowSwitchOff: 0
+--- !u!114 &773272924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905337827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b2e77887a37f814d9f8cb204ea01681, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_toggleList:
+  - {fileID: 2003529631}
+  - {fileID: 1412806390}
 --- !u!1 &1906414311
 GameObject:
   m_ObjectHideFlags: 0
@@ -5406,7 +5442,7 @@ GameObject:
   - component: {fileID: 2003529630}
   - component: {fileID: 2003529631}
   m_Layer: 5
-  m_Name: CelsiusToggle
+  m_Name: Celsius
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5599,13 +5635,13 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2030471094}
   m_TextComponent: {fileID: 1390840334}
   m_Placeholder: {fileID: 154388411}
-  m_ContentType: 0
+  m_ContentType: 2
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 4
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 0
+  m_CharacterValidation: 1
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
@@ -5781,7 +5817,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 4
   m_WholeNumbers: 0
-  m_Value: 3
+  m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
@@ -5811,6 +5847,159 @@ MonoBehaviour:
   m_slider: {fileID: 2127293753}
   m_text: {fileID: 542552068}
   m_sliderType: 1
+--- !u!1 &3764026243994541696
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5353066019446575885}
+  - component: {fileID: 301762631818453851}
+  - component: {fileID: 5297116533531761386}
+  m_Layer: 5
+  m_Name: TeaAddedFeedbackPanel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &5353066019446575885
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3764026243994541696}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4661003955622568286}
+  m_Father: {fileID: 5234852474349674662}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &301762631818453851
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3764026243994541696}
+  m_CullTransparentMesh: 0
+--- !u!114 &5297116533531761386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3764026243994541696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.89411765}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!1 &4309584826006334164
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3098443925367323577}
+  - component: {fileID: 4159153347593198023}
+  - component: {fileID: 3212159370358322805}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3098443925367323577
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4309584826006334164}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4661003955622568286}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &4159153347593198023
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4309584826006334164}
+  m_CullTransparentMesh: 0
+--- !u!114 &3212159370358322805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4309584826006334164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Your tea has been added! :)
 --- !u!1 &5234852474349674663
 GameObject:
   m_ObjectHideFlags: 0
@@ -5822,6 +6011,7 @@ GameObject:
   - component: {fileID: 5234852474349674662}
   - component: {fileID: 5234852474349674660}
   - component: {fileID: 5234852474349674661}
+  - component: {fileID: 1180605638}
   m_Layer: 5
   m_Name: AddTea
   m_TagString: Untagged
@@ -5841,6 +6031,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 820353916}
+  - {fileID: 5353066019446575885}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5886,6 +6077,30 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1180605638
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5234852474349674663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a133e7860bf1dd643bdb47884dbe26e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_teaAddFeedbackDuration: 2
+  m_nameInputField: {fileID: 1512292235}
+  m_brandInputField: {fileID: 1372929375}
+  m_teaTypeToggleGroup: {fileID: 591332010}
+  m_temperatureInputField: {fileID: 2030471093}
+  m_temperatureToggleGroup: {fileID: 773272924}
+  m_timeMinSlider: {fileID: 320915548}
+  m_timeMaxSlider: {fileID: 1639404816}
+  m_caffeineSlider: {fileID: 2127293753}
+  m_ingredientInputField: {fileID: 1369788596}
+  m_addTeaButton: {fileID: 63240584}
+  m_teaAddedFeedbackPanel: {fileID: 3764026243994541696}
 --- !u!1 &7343722614250766867
 GameObject:
   m_ObjectHideFlags: 0
@@ -5964,6 +6179,81 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: I
+--- !u!1 &7668455220243720643
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4661003955622568286}
+  - component: {fileID: 4311883538315662963}
+  - component: {fileID: 3390602348669520497}
+  m_Layer: 5
+  m_Name: Background
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &4661003955622568286
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7668455220243720643}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 3098443925367323577}
+  m_Father: {fileID: 5353066019446575885}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 800, y: 400}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &4311883538315662963
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7668455220243720643}
+  m_CullTransparentMesh: 0
+--- !u!114 &3390602348669520497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7668455220243720643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &8346423922594622636
 GameObject:
   m_ObjectHideFlags: 0
