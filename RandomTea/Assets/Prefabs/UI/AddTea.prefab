@@ -997,6 +997,7 @@ GameObject:
   - component: {fileID: 320915547}
   - component: {fileID: 320915548}
   - component: {fileID: 320915549}
+  - component: {fileID: 5234852475528379497}
   m_Layer: 5
   m_Name: TimeMinSlider
   m_TagString: Untagged
@@ -1102,6 +1103,21 @@ MonoBehaviour:
   m_slider: {fileID: 320915548}
   m_text: {fileID: 1906414313}
   m_sliderType: 0
+--- !u!114 &5234852475528379497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 320915546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e82e0fb99f5fccd49a053c2658b204c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_doBehaviourWhen: 1
+  m_currentSlider: {fileID: 320915548}
+  m_targetSlider: {fileID: 1639404816}
 --- !u!1 &333304916
 GameObject:
   m_ObjectHideFlags: 0
@@ -4537,6 +4553,7 @@ GameObject:
   - component: {fileID: 1639404815}
   - component: {fileID: 1639404816}
   - component: {fileID: 1639404817}
+  - component: {fileID: 5234852475528379496}
   m_Layer: 5
   m_Name: TimeMaxSlider
   m_TagString: Untagged
@@ -4642,6 +4659,21 @@ MonoBehaviour:
   m_slider: {fileID: 1639404816}
   m_text: {fileID: 1043866749}
   m_sliderType: 0
+--- !u!114 &5234852475528379496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639404814}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e82e0fb99f5fccd49a053c2658b204c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_doBehaviourWhen: 2
+  m_currentSlider: {fileID: 1639404816}
+  m_targetSlider: {fileID: 320915548}
 --- !u!1 &1656142170
 GameObject:
   m_ObjectHideFlags: 0
