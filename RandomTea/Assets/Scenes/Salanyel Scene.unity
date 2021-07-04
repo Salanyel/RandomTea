@@ -555,6 +555,22 @@ PrefabInstance:
       propertyPath: m_panelsToClose.Array.data[2]
       value: 
       objectReference: {fileID: 1461393288}
+    - target: {fileID: 797050810, guid: b75829c386dbfef42a10d3090f824668, type: 3}
+      propertyPath: m_panelToOpen
+      value: 
+      objectReference: {fileID: 1852307125}
+    - target: {fileID: 797050810, guid: b75829c386dbfef42a10d3090f824668, type: 3}
+      propertyPath: m_panelsToClose.Array.data[0]
+      value: 
+      objectReference: {fileID: 666019621}
+    - target: {fileID: 797050810, guid: b75829c386dbfef42a10d3090f824668, type: 3}
+      propertyPath: m_panelsToClose.Array.data[1]
+      value: 
+      objectReference: {fileID: 1461393288}
+    - target: {fileID: 797050810, guid: b75829c386dbfef42a10d3090f824668, type: 3}
+      propertyPath: m_panelsToClose.Array.data[2]
+      value: 
+      objectReference: {fileID: 1461393288}
     - target: {fileID: 1917768748, guid: b75829c386dbfef42a10d3090f824668, type: 3}
       propertyPath: m_panelToOpen
       value: 
@@ -571,22 +587,6 @@ PrefabInstance:
       propertyPath: m_panelsToClose.Array.data[2]
       value: 
       objectReference: {fileID: 1180605636}
-    - target: {fileID: 2129681620, guid: b75829c386dbfef42a10d3090f824668, type: 3}
-      propertyPath: m_panelToOpen
-      value: 
-      objectReference: {fileID: 1852307125}
-    - target: {fileID: 2129681620, guid: b75829c386dbfef42a10d3090f824668, type: 3}
-      propertyPath: m_panelsToClose.Array.data[0]
-      value: 
-      objectReference: {fileID: 666019621}
-    - target: {fileID: 2129681620, guid: b75829c386dbfef42a10d3090f824668, type: 3}
-      propertyPath: m_panelsToClose.Array.data[1]
-      value: 
-      objectReference: {fileID: 1180605636}
-    - target: {fileID: 2129681620, guid: b75829c386dbfef42a10d3090f824668, type: 3}
-      propertyPath: m_panelsToClose.Array.data[2]
-      value: 
-      objectReference: {fileID: 1461393288}
     - target: {fileID: 2840538606602470036, guid: b75829c386dbfef42a10d3090f824668,
         type: 3}
       propertyPath: m_LocalPosition.x

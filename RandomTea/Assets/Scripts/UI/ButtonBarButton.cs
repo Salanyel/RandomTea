@@ -3,12 +3,12 @@
 public class ButtonBarButton : MonoBehaviour
 {
     [SerializeField]
-    private GameObject m_panelToOpen = null;
+    protected GameObject m_panelToOpen = null;
 
     [SerializeField]
-    private GameObject[] m_panelsToClose = null;
+    protected GameObject[] m_panelsToClose = null;
 
-    public void OnClick()
+    public virtual void OnClick()
     {
         foreach(var panelToClose in m_panelsToClose)
         {
