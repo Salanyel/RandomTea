@@ -11,7 +11,7 @@ public class ButtonBarRandomTeaButton : ButtonBarButton
     private void Awake()
     {
         m_teaManager = FindObjectOfType<TeaManager>();
-        m_teaDetailForm = FindObjectOfType<TeaDetailForm>();
+        m_teaDetailForm = m_panelToOpen.GetComponent<TeaDetailForm>();
     }
 
     public override void OnClick()
